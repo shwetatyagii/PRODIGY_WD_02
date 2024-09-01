@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2a2a2a 25%, #121212 100%);
+  color: #e0e0e0;
+}
+
+#container {
+  width: 720px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(30, 30, 30, 0.8);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#stopwatch {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#stopwatch label {
+  font-size: 20px;
+  color: #b0b0b0;
+}
+
+#stopwatch span {
+  font-size: 48px;
+  color: #ffffff;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#stopwatch #buttons {
+  width: 50%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#stopwatch #buttons i {
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  background: rgba(42, 42, 42, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  color: #e0e0e0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+}
+
+#stopwatch #buttons i.no-click {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#stopwatch #buttons i.can-click:hover {
+  color: #0e70f1;
+  background: rgba(42, 42, 42, 0.8);
+}
+
+#stopwatch #buttons i.fa-play,
+#stopwatch #buttons i.fa-pause {
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+  background: rgba(0, 122, 204, 0.7);
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#stopwatch #buttons i.hide {
+  display: none;
+}
+
+#stopwatch #buttons i.fa-play:hover,
+#stopwatch #buttons i.fa-pause:hover {
+  background: rgba(14, 112, 241, 0.7);
+}
+
+#stopwatch label:nth-child(3) {
+  margin-top: 20px;
+  display: none;
+}
+
+#stopwatch #laps {
+  display: none;
+  width: 40%;
+  flex-direction: column;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+#stopwatch #laps .lap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 5px;
+  padding: 5px 0;
+  background: rgba(42, 42, 42, 0.6);
+  border-radius: 6px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+}
+
+#stopwatch #laps .lap:last-child {
+  margin-bottom: 0;
+}
+
+#stopwatch #laps .lap .time {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+#stopwatch #laps .lap .mtp {
+  font-size: 18px;
+  color: #0e70f1;
+}
